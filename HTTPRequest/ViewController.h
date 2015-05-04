@@ -7,8 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "HTTPCommunication.h"
 
 @interface ViewController : UIViewController
+
+@property (strong, nonatomic) HTTPCommunication *http;
+@property (strong, nonatomic) NSNumber *responseID;
+
+@property (weak, nonatomic) IBOutlet UILabel *jokeLabel;
+- (IBAction)getJoke:(id)sender;
 
 
 @end

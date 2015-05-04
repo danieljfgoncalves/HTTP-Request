@@ -14,6 +14,7 @@
 		E47174981AF7B8720090B3F9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E47174971AF7B8720090B3F9 /* Images.xcassets */; };
 		E471749B1AF7B8720090B3F9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E47174991AF7B8720090B3F9 /* LaunchScreen.xib */; };
 		E47174A71AF7B8720090B3F9 /* HTTPRequestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E47174A61AF7B8720090B3F9 /* HTTPRequestTests.m */; };
+		E47174B31AF7B8B50090B3F9 /* HTTPCommunication.m in Sources */ = {isa = PBXBuildFile; fileRef = E47174B21AF7B8B50090B3F9 /* HTTPCommunication.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		E47174A01AF7B8720090B3F9 /* HTTPRequestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HTTPRequestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E47174A51AF7B8720090B3F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E47174A61AF7B8720090B3F9 /* HTTPRequestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HTTPRequestTests.m; sourceTree = "<group>"; };
+		E47174B11AF7B8B50090B3F9 /* HTTPCommunication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPCommunication.h; sourceTree = "<group>"; };
+		E47174B21AF7B8B50090B3F9 /* HTTPCommunication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPCommunication.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +66,7 @@
 		E471747E1AF7B8720090B3F9 = {
 			isa = PBXGroup;
 			children = (
+				E47174B01AF7B8A20090B3F9 /* Model */,
 				E47174891AF7B8720090B3F9 /* HTTPRequest */,
 				E47174A31AF7B8720090B3F9 /* HTTPRequestTests */,
 				E47174881AF7B8720090B3F9 /* Products */,
@@ -117,6 +121,15 @@
 				E47174A51AF7B8720090B3F9 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E47174B01AF7B8A20090B3F9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E47174B11AF7B8B50090B3F9 /* HTTPCommunication.h */,
+				E47174B21AF7B8B50090B3F9 /* HTTPCommunication.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,6 +234,7 @@
 			files = (
 				E47174931AF7B8720090B3F9 /* ViewController.m in Sources */,
 				E47174901AF7B8720090B3F9 /* AppDelegate.m in Sources */,
+				E47174B31AF7B8B50090B3F9 /* HTTPCommunication.m in Sources */,
 				E471748D1AF7B8720090B3F9 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
